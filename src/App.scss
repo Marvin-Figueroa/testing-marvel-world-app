@@ -1,0 +1,11 @@
+.App {
+  width: 90%;
+  max-width: 130rem;
+  margin: 0 auto;
+  min-height: 100vh;
+
+  display: grid;
+  place-items: center;
+  align-items: center;
+  grid-template-rows: 10vh 1fr;
+}

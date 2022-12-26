@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  width: 100%;
+
+  .navbar-brand {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      color: crimson;
+    }
+  }
+
+  .navbar-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover,
+    &:active {
+      color: crimson;
+      cursor: pointer;
+    }
+
+    &.active {
+      color: crimson;
+      pointer-events: none;
+    }
+  }
+}

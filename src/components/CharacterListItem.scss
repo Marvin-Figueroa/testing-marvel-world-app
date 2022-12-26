@@ -1,0 +1,44 @@
+.character-item {
+  display: flex;
+  flex-direction: column;
+  background-color: crimson;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 35rem;
+  border: 3px solid crimson;
+
+  .character-item__footer {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .character-item__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.character-item__image {
+  flex: 1;
+}
+
+.character-item__name {
+  color: white;
+  font-weight: bold;
+  margin: 1rem auto;
+
+  a {
+    &:link,
+    &:visited {
+      color: white;
+      text-decoration: none;
+    }
+
+    &:active,
+    &:hover {
+      color: darkred;
+      cursor: pointer;
+    }
+  }
+}

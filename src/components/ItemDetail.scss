@@ -1,0 +1,38 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid crimson;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 30rem;
+}
+
+.item__image {
+  flex: 3;
+}
+
+.item__text {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  color: cornsilk;
+}
+
+.item__title {
+  color: crimson;
+  font-weight: bold;
+}
+
+.item__description {
+  font-size: 1.8rem;
+  color: cornsilk;
+}
+
+.image-galley__title {
+  color: cornsilk;
+  font-size: 2rem;
+  text-align: center;
+  margin: 4rem auto;
+}

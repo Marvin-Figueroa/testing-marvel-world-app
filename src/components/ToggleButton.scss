@@ -1,0 +1,21 @@
+.like-button {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background-color: darkred;
+  gap: 2rem;
+  color: white;
+  width: 100%;
+  max-width: 35rem;
+  border-radius: 10px;
+  padding: 1rem;
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(176, 2, 2);
+  }
+}

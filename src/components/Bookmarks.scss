@@ -1,0 +1,41 @@
+.bookmarks-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.bookmarks-remove-btn {
+  align-self: center;
+  padding: 2rem 3rem;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:not(:disabled):hover {
+    background-color: rgb(249, 23, 68);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+  }
+}
+
+.characters-section,
+.comics-section,
+.stories-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  width: 100%;
+
+  h2 {
+    color: crimson;
+    font-size: 2.5rem;
+  }
+}

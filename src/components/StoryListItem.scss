@@ -1,0 +1,38 @@
+.story-item {
+  background-color: crimson;
+  color: cornsilk;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 30rem;
+
+  .story-item__title {
+    font-size: 1.8rem;
+    font-weight: bold;
+
+    &:link,
+    &:visited {
+      color: white;
+      text-decoration: none;
+    }
+
+    &:active,
+    &:hover {
+      color: darkred;
+      cursor: pointer;
+    }
+  }
+
+  .story-item__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+}

@@ -1,0 +1,51 @@
+.pagination {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 6px;
+  align-self: flex-end;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+
+  .page-item {
+    border-radius: 6px;
+  }
+
+  .page-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    color: cornsilk;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1.6rem;
+    border-radius: 6px;
+    height: 4rem;
+    border: 1px solid crimson;
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.7;
+      pointer-events: none;
+    }
+
+    &:hover,
+    &.current-page {
+      background-color: crimson;
+      color: white;
+    }
+
+    &.current-page {
+      pointer-events: none;
+    }
+
+    &.dots {
+      pointer-events: none;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.images-gallery {
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  width: 100%;
+  gap: 1.5rem;
+}

@@ -1,0 +1,18 @@
+.filter-select {
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filter-select__label {
+  color: crimson;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.filter-select__select {
+  padding: 1rem;
+  border-radius: 10px;
+}

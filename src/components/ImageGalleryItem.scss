@@ -1,0 +1,12 @@
+.image-gallery__item {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid crimson;
+  max-width: 30rem;
+
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+}

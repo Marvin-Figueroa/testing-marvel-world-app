@@ -1,0 +1,14 @@
+.story-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.loader-container {
+  min-height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
