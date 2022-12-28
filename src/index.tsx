@@ -7,6 +7,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { HashLoader } from 'react-spinners';
 
 import './index.scss';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -14,11 +15,13 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <PersistGate
-        loading={<HashLoader color='#dc143c' />}
-        persistor={persistor}>
-        <App />
-      </PersistGate>
+      <BrowserRouter>
+        <PersistGate
+          loading={<HashLoader color='#dc143c' />}
+          persistor={persistor}>
+          <App />
+        </PersistGate>
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>
 );
