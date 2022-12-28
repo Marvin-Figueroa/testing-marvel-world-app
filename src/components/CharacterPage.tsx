@@ -126,7 +126,7 @@ function CharacterPage() {
       )}
       {loadingCharacters ? (
         <div className='loader-container'>
-          <HashLoader color='#dc143c' />
+          <HashLoader data-testid='loader' color='#dc143c' />
         </div>
       ) : (
         <CharacterList characters={characters.nonHiddenCharacters} />

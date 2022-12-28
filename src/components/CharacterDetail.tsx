@@ -72,7 +72,7 @@ function CharacterDetail() {
   return (
     <main className='character-detail'>
       {loadingCharacter ? (
-        <HashLoader color='#dc143c' />
+        <HashLoader data-testid='loader' color='#dc143c' />
       ) : (
         <div className='character-detail__header'>
           <ItemDetail
