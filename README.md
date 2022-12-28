@@ -5,3 +5,5 @@
 The assignment for this week is based on the Marvel App built last week, the main goal is to use Jest and React Testing Library to test our code.
 
 ## Live Site
+
+[Vercel Deployment](https://homework-week-9.vercel.app/)
