@@ -93,7 +93,7 @@ function ComicPage() {
       )}
       {loadingComics ? (
         <div className='loader-container'>
-          <HashLoader color='#dc143c' />
+          <HashLoader data-testid='loader' color='#dc143c' />
         </div>
       ) : (
         <ComicList comics={comics.nonHiddenComics} />
