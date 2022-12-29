@@ -35,9 +35,13 @@ describe('Pagination Component', () => {
       />
     );
     // Assertions
-    expect(screen.queryByText('1')).toBeNull;
-    expect(screen.queryByRole('button', { name: /next/i })).toBeNull();
-    expect(screen.queryByRole('button', { name: /previous/i })).toBeNull();
+    expect(screen.queryByText('1')).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole('button', { name: /next/i })
+    ).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole('button', { name: /previous/i })
+    ).not.toBeInTheDocument();
   });
 
   it('should render 1 button with 3 dots between the rest of the numbers', () => {
@@ -52,6 +56,7 @@ describe('Pagination Component', () => {
       />
     );
     // Assertions
+    screen.queryAllByRole('button', { name: /ellipsis/i });
     expect(screen.queryAllByTestId('dots')).toHaveLength(1);
   });
 

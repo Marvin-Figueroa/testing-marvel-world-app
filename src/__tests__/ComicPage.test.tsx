@@ -36,12 +36,20 @@ describe('Comic Page', () => {
       </Provider>
     );
     // Interact / Act
-    await waitFor(() => {
-      const buttons = screen.getAllByRole('button', {
-        name: /2/i,
-      });
-      userEvent.click(buttons[0]);
+
+    await waitFor(
+      () => {
+        expect(screen.queryAllByText('MARVEL PREVIEWS (2017)')).toHaveLength(3);
+        expect(screen.queryByText('ANT-MAN (2003) #2')).toBeInTheDocument();
+      },
+      { timeout: 3000 }
+    );
+
+    const buttons = screen.getAllByRole('button', {
+      name: /2/i,
     });
+
+    userEvent.click(buttons[0]);
     // Assertions
     await waitFor(
       () => {

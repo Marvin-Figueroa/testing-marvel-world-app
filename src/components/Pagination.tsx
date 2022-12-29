@@ -58,7 +58,11 @@ const Pagination = ({
           if (typeof pageNum === 'string') {
             return (
               <li key={pageNum + index} className='page-item'>
-                <button data-testid='dots' className='page-btn dots'>
+                <button
+                  data-testid='dots'
+                  className='page-btn dots'
+                  aria-label='ellipsis'
+                  title='Ellipsis'>
                   &#8230;
                 </button>
               </li>
